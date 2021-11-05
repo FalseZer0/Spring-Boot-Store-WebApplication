@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Добавить кота</title>
+</head>
+
+<html>
+
+<body>
+
+<form th:action="@{/addcat}" th:object="${cat}" method="post">
+    <span>id</span>
+    <input th:field="*{id}" type="hidden">
+    </p>
+    <span>name</span>
+    <input th:field="*{name}">
+    </p>
+    <span>color</span>
+    <input th:field="*{color}">
+    </p>
+    <button type="submit">Сохранить</button>
+    </br>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Color</th>
+            <th><Details></Details></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product : ${pussies}">
+            <td th:text="${product.id}"/>
+            <td th:text="${product.name}"/>
+            <td th:text="${product.color    }"/>
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+</body>
+</html>

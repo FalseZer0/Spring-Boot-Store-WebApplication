@@ -1,0 +1,10 @@
+--CREATE TABLE products (
+--    id serial NOT NULL,
+--    title VARCHAR(100) NOT NULL,
+--    price INTEGER NOT NULL,
+--    PRIMARY KEY (id)
+--);
+--INSERT INTO products (title,price) VALUES
+--('Bread', 40),
+--('Milk', 90),
+--('Cheese', 220);
