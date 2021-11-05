@@ -1,2 +1,2 @@
 # Spring-Boot-Store-WebApplication
-Simple website using Spring boot, Spring Security, Spring Data, Spring AOP and PostgreSQL
+Simple website using Spring boot, Spring Security, Spring Data, Spring AOP, ThymeLeaf and PostgreSQL
